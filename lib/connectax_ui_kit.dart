@@ -8,3 +8,5 @@
  */
 
 library connectax_ui_kit;
+
+export 'src/text_button.dart';
