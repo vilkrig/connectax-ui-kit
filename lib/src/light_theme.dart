@@ -6,9 +6,3 @@
  * Copyright (c) 2022 Vilkrig Hungary Kft. All rights reserved.
  * See LICENSE for distribution and usage details.
  */
-
-library connectax_ui_kit;
-
-export 'src/text_button.dart';
-export 'src/dark_theme.dart';
-export 'src/light_theme.dart';
