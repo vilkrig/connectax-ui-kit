@@ -1,2 +1,2 @@
-# connectax_ui_kit
+# Connectax UI Kit
 
