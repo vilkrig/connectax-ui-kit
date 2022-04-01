@@ -10,7 +10,6 @@
 import 'package:flutter/material.dart';
 
 class ConnectaxTextButton extends StatelessWidget {
-  ///
   final String buttonTitle;
 
   const ConnectaxTextButton({required this.buttonTitle, Key? key})

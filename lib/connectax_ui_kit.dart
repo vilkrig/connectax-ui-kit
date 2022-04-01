@@ -9,6 +9,5 @@
 
 library connectax_ui_kit;
 
-export 'src/text_button.dart';
-export 'src/dark_theme.dart';
-export 'src/light_theme.dart';
+export 'src/buttons/buttons.dart';
+export 'src/themes/themes.dart';
