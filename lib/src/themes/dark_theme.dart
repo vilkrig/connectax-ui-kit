@@ -12,8 +12,8 @@ import 'package:flutter/material.dart';
 class ConnectaxLightTheme {
   static ThemeData get dark {
     return ThemeData(
-      brightness: Brightness.dark,
       useMaterial3: true,
+      brightness: Brightness.dark,
       canvasColor: Colors.transparent,
       scaffoldBackgroundColor: Colors.black,
     );
