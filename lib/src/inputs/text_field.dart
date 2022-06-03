@@ -9,13 +9,11 @@
 
 import 'package:flutter/material.dart';
 
-class ConnectaxLightTheme {
-  static ThemeData get light {
-    return ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.light,
-      canvasColor: Colors.transparent,
-      scaffoldBackgroundColor: Colors.white,
-    );
+class ConnectaxTextField extends StatelessWidget {
+  const ConnectaxTextField({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextField();
   }
 }
