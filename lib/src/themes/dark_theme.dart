@@ -16,6 +16,11 @@ class ConnectaxDarkTheme {
         brightness: Brightness.dark,
         canvasColor: Colors.transparent,
         scaffoldBackgroundColor: Colors.black,
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: Colors.lightGreen,
+          selectionColor: Colors.lime,
+          selectionHandleColor: Colors.lightGreen,
+        ),
         textButtonTheme: TextButtonThemeData(
             style: TextButton.styleFrom(
                 primary: Colors.black, backgroundColor: Colors.white)),
