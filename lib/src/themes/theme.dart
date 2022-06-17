@@ -9,7 +9,7 @@
 
 import 'package:flutter/material.dart';
 
-class ConnectaxDarkTheme {
+class ConnectaxTheme {
   static ThemeData get dark {
     return ThemeData(
         useMaterial3: true,
@@ -26,5 +26,14 @@ class ConnectaxDarkTheme {
                 primary: Colors.black, backgroundColor: Colors.white)),
         elevatedButtonTheme:
             ElevatedButtonThemeData(style: ElevatedButton.styleFrom()));
+  }
+
+  static ThemeData get light {
+    return ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.light,
+      canvasColor: Colors.transparent,
+      scaffoldBackgroundColor: Colors.white,
+    );
   }
 }
