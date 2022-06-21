@@ -16,16 +16,28 @@ class ConnectaxTheme {
         brightness: Brightness.dark,
         canvasColor: Colors.transparent,
         scaffoldBackgroundColor: Colors.black,
+        fontFamily: 'Rubik',
         textSelectionTheme: const TextSelectionThemeData(
-          cursorColor: Colors.lightGreen,
+          cursorColor: Colors.white,
           selectionColor: Colors.lime,
           selectionHandleColor: Colors.lightGreen,
         ),
+        // ignore: prefer_const_constructors
+        buttonTheme: const ButtonThemeData(),
         textButtonTheme: TextButtonThemeData(
-            style: TextButton.styleFrom(
-                primary: Colors.black, backgroundColor: Colors.white)),
-        elevatedButtonTheme:
-            ElevatedButtonThemeData(style: ElevatedButton.styleFrom()));
+            style: ButtonStyle(
+                textStyle: MaterialStateProperty.all(const TextStyle(
+                    fontFamily: 'Rubik', color: Colors.white, fontSize: 12.0)),
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(const Color(0xFF2c2f33)),
+                foregroundColor:
+                    MaterialStateProperty.all<Color>(const Color(0xFFF2F5F8)),
+                padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                    const EdgeInsets.fromLTRB(25, 18, 25, 18)),
+                shape: MaterialStateProperty.all<OutlinedBorder>(
+                    RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                )))));
   }
 
   static ThemeData get light {
@@ -34,6 +46,19 @@ class ConnectaxTheme {
       brightness: Brightness.light,
       canvasColor: Colors.transparent,
       scaffoldBackgroundColor: Colors.white,
+      fontFamily: 'Rubik',
+      textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
+              textStyle: MaterialStateProperty.all(const TextStyle(
+                  fontFamily: 'Rubik', color: Colors.white, fontSize: 12.0)),
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+                  const EdgeInsets.fromLTRB(25, 18, 25, 18)),
+              shape: MaterialStateProperty.all<OutlinedBorder>(
+                  RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0),
+              )))),
     );
   }
 }
