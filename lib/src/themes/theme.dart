@@ -29,7 +29,7 @@ class ConnectaxTheme {
                 textStyle: MaterialStateProperty.all(const TextStyle(
                     fontFamily: 'Rubik', color: Colors.white, fontSize: 12.0)),
                 backgroundColor:
-                    MaterialStateProperty.all<Color>(const Color(0xFF2c2f33)),
+                    MaterialStateProperty.all<Color>(const Color(0xFF247BFE)),
                 foregroundColor:
                     MaterialStateProperty.all<Color>(const Color(0xFFF2F5F8)),
                 padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
