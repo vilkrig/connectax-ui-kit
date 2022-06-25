@@ -11,12 +11,14 @@ import 'package:flutter/material.dart';
 
 class ConnectaxTextButton extends StatelessWidget {
   final String buttonTitle;
+  final Function()? onPressed;
 
-  const ConnectaxTextButton({required this.buttonTitle, Key? key})
+  const ConnectaxTextButton(
+      {required this.buttonTitle, Key? key, required this.onPressed})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(onPressed: () {}, child: Text(buttonTitle));
+    return TextButton(onPressed: onPressed, child: Text(buttonTitle));
   }
 }
