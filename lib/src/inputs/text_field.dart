@@ -10,10 +10,17 @@
 import 'package:flutter/material.dart';
 
 class ConnectaxTextField extends StatelessWidget {
-  const ConnectaxTextField({Key? key}) : super(key: key);
+  final String hintText;
+  const ConnectaxTextField({Key? key, required this.hintText})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const TextField();
+    return TextField(
+      cursorWidth: 1,
+      decoration: InputDecoration(hintText: hintText),
+      style: const TextStyle(
+          fontSize: 12, fontFamily: 'Rubik', fontWeight: FontWeight.normal),
+    );
   }
 }
