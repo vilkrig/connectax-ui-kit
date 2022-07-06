@@ -10,15 +10,25 @@
 import 'package:flutter/material.dart';
 
 class ConnectaxTextButton extends StatelessWidget {
-  final String buttonTitle;
+  const ConnectaxTextButton({
+    required this.buttonTitle,
+    Key? key,
+    required this.onPressed,
+    this.backgroundColor,
+  }) : super(key: key);
+  final Widget buttonTitle;
   final Function()? onPressed;
-
-  const ConnectaxTextButton(
-      {required this.buttonTitle, Key? key, required this.onPressed})
-      : super(key: key);
+  final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(onPressed: onPressed, child: Text(buttonTitle));
+    return TextButton(
+      onPressed: onPressed,
+      style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(
+        backgroundColor,
+      )),
+      child: buttonTitle,
+    );
   }
 }

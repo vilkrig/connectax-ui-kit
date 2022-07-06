@@ -10,22 +10,23 @@
 import 'package:flutter/material.dart';
 
 class ConnectaxTextField extends StatelessWidget {
-  final TextEditingController controller;
+  const ConnectaxTextField({
+    Key? key,
+    required this.hintText,
+    this.onChanged,
+    this.controller,
+    required this.errorText,
+    this.autofillHints,
+    required this.obscureText,
+    this.prefixIcon,
+  }) : super(key: key);
+  final TextEditingController? controller;
   final String hintText;
-  final String errorText;
+  final String? errorText;
+  final Widget? prefixIcon;
   final Function(String)? onChanged;
   final Iterable<String>? autofillHints;
   final bool obscureText;
-
-  const ConnectaxTextField(
-      {Key? key,
-      required this.hintText,
-      required this.onChanged,
-      required this.controller,
-      required this.errorText,
-      this.autofillHints,
-      required this.obscureText})
-      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,9 +36,16 @@ class ConnectaxTextField extends StatelessWidget {
       onChanged: onChanged,
       obscureText: obscureText,
       autofillHints: autofillHints,
-      decoration: InputDecoration(hintText: hintText, errorText: errorText),
+      decoration: InputDecoration(
+        hintText: hintText,
+        errorText: errorText,
+        prefixIcon: prefixIcon,
+      ),
       style: const TextStyle(
-          fontSize: 12, fontFamily: 'Rubik', fontWeight: FontWeight.normal),
+        fontSize: 14,
+        fontFamily: 'Rubik',
+        fontWeight: FontWeight.normal,
+      ),
     );
   }
 }
