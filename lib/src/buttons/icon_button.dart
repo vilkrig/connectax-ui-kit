@@ -6,7 +6,6 @@
  * Copyright (c) 2022 Vilkrig Hungary Kft. All rights reserved.
  * See LICENSE for distribution and usage details.
  */
-import 'package:flutter_boxicons/flutter_boxicons.dart';
 import 'package:flutter/material.dart';
 
 class ConnectaxIconButton extends StatelessWidget {

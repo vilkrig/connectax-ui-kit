@@ -167,7 +167,7 @@ class ConnectaxTheme {
         ),
         contentPadding: EdgeInsets.symmetric(vertical: 18, horizontal: 15),
         filled: true,
-        fillColor: Color(0xfFFFCFCFC),
+        fillColor: Color(0xFFFCFCFC),
       ),
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(

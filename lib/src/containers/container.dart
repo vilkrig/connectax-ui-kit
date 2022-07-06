@@ -33,7 +33,7 @@ class ConnectaxContainer extends StatelessWidget {
       Expanded(
         child: Center(
           child: Container(
-            color: isDarkTheme ? const Color(0xFF111315) : Color(0xFCFCFC),
+            color: isDarkTheme ? const Color(0xFF111315) : const Color(0x00fcfcfc),
             child: Padding(
               padding: const EdgeInsets.all(30),
               child: Column(
@@ -60,7 +60,7 @@ class ConnectaxContainer extends StatelessWidget {
       Expanded(
         flex: 3,
         child: Container(
-          color: isDarkTheme ? const Color(0xFF000000) : Color(0xFFF4F4F4),
+          color: isDarkTheme ? const Color(0xFF000000) : const Color(0xFFF4F4F4),
           child: Center(child: rightSideContent),
         ),
       ),
