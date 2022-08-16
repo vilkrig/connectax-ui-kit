@@ -14,3 +14,4 @@ export 'src/inputs/inputs.dart';
 export 'src/themes/themes.dart';
 export 'src/windows/windows.dart';
 export 'src/texts/texts.dart';
+export 'src/widgets.dart';
