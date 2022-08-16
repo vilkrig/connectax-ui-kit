@@ -73,11 +73,11 @@ class ConnectaxTheme {
           selectionHandleColor: Colors.lightGreen,
         ),
         textButtonTheme: TextButtonThemeData(
-          style: _base.textButtonTheme.style!.copyWith(
+          style: _base.textButtonTheme.style?.copyWith(
             textStyle: MaterialStateProperty.resolveWith(
-              (states) => _base.textButtonTheme.style!.textStyle!
-                  .resolve(states)!
-                  .copyWith(color: Colors.white),
+              (states) => _base.textButtonTheme.style?.textStyle
+                  ?.resolve(states)
+                  ?.copyWith(color: Colors.white),
             ),
             backgroundColor:
                 MaterialStateProperty.all<Color>(const Color(0xFF247BFE)),
@@ -88,8 +88,8 @@ class ConnectaxTheme {
         inputDecorationTheme: _base.inputDecorationTheme.copyWith(
           fillColor: const Color(0xff111111),
           focusColor: const Color(0xFF1A1D1F),
-          labelStyle: _base.inputDecorationTheme.labelStyle!
-              .copyWith(color: Colors.black),
+          labelStyle: _base.inputDecorationTheme.labelStyle
+              ?.copyWith(color: Colors.black),
           border: MaterialStateOutlineInputBorder.resolveWith(
             (states) {
               final base = (_base.inputDecorationTheme.border
@@ -103,9 +103,9 @@ class ConnectaxTheme {
                     );
             },
           ),
-          floatingLabelStyle: _base.inputDecorationTheme.floatingLabelStyle!
-              .copyWith(color: Colors.white),
-          hintStyle: _base.inputDecorationTheme.hintStyle!.copyWith(
+          floatingLabelStyle: _base.inputDecorationTheme.floatingLabelStyle
+              ?.copyWith(color: Colors.white),
+          hintStyle: _base.inputDecorationTheme.hintStyle?.copyWith(
             color: const Color.fromARGB(255, 156, 156, 156),
           ),
         ),
@@ -115,11 +115,11 @@ class ConnectaxTheme {
         brightness: Brightness.light,
         scaffoldBackgroundColor: Colors.white,
         textButtonTheme: TextButtonThemeData(
-          style: _base.textButtonTheme.style!.copyWith(
+          style: _base.textButtonTheme.style?.copyWith(
             textStyle: MaterialStateProperty.resolveWith(
-              (states) => _base.textButtonTheme.style!.textStyle!
-                  .resolve(states)!
-                  .copyWith(color: Colors.black),
+              (states) => _base.textButtonTheme.style?.textStyle
+                  ?.resolve(states)
+                  ?.copyWith(color: Colors.black),
             ),
             backgroundColor:
                 MaterialStateProperty.all<Color>(const Color(0xFF247BFE)),
@@ -129,8 +129,8 @@ class ConnectaxTheme {
         ),
         inputDecorationTheme: _base.inputDecorationTheme.copyWith(
           focusColor: const Color(0xFFF4F4F4),
-          labelStyle: _base.inputDecorationTheme.labelStyle!
-              .copyWith(color: Colors.black),
+          labelStyle: _base.inputDecorationTheme.labelStyle
+              ?.copyWith(color: Colors.black),
           border: MaterialStateOutlineInputBorder.resolveWith(
             (states) {
               final base = (_base.inputDecorationTheme.border
@@ -144,9 +144,9 @@ class ConnectaxTheme {
                     );
             },
           ),
-          floatingLabelStyle: _base.inputDecorationTheme.floatingLabelStyle!
-              .copyWith(color: Colors.white),
-          hintStyle: _base.inputDecorationTheme.hintStyle!.copyWith(
+          floatingLabelStyle: _base.inputDecorationTheme.floatingLabelStyle
+              ?.copyWith(color: Colors.white),
+          hintStyle: _base.inputDecorationTheme.hintStyle?.copyWith(
             color: const Color.fromARGB(255, 156, 156, 156),
           ),
         ),
